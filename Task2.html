@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Techie Portfolio</title>
+  <link rel="stylesheet" href="Task2.css">
+  <style>
+    .navbar {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #053256;
+      font-weight: 600;
+      transition: color 0.3s ease, box-shadow 0.3s ease;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+
+    .navbar ul li a:hover {
+      color: #fff;
+      background-color: #66b0ed;
+      box-shadow: 0 0 10px #2196f3, 0 0 20px #64b5f6;
+    }
+
+    .header-content {
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .logo {
+      font-size: 4rem;
+      font-weight: 800;
+      color: navy;
+      letter-spacing: 1px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .logo span {
+      color: navy;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: black;
+      margin-top: 10px;
+      font-style: italic;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .project-card {
+      background: #e3f2fd;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(33, 150, 243, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #64b5f6, 0 0 30px #2196f3;
+    }
+
+    .resume-btn {
+      background-color: #64b5f6;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #2196f3;
+    }
+
+    .resume-btn:hover {
+      background-color: #42a5f5;
+      box-shadow: 0 0 15px #64b5f6, 0 0 25px #2196f3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1 class="logo">Varsha <span>M Tandur</span></h1>
+      <p class="tagline">Aspiring Developer | Problem Solver | Tech Enthusiast</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="profile-pic">
+          <img src="assets\photo.jpg" alt="Your Photo">
+        </div>
+        <p>I am an aspiring developer with a strong interest in coding, a flair for design, and proficiency in creating well-structured and visually engaging web pages.</p>
+      </div>
+      
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git/Git Hub</div>
+      <div class="skill">SQL</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Departmental Store Management System using SQL</p>
+        <a href="#">View Project -></a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>The Healthcare Information Management System (HIMS) using Python with Streamlit</p>
+        <a href="#">View Project -></a>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>Mobile-first eCommerce UI design and frontend implementation.</p>
+        <a href="#">View Project -></a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Resume Section -->
+<section class="section" id="resume">
+  <h2>Resume</h2>
+  <p style="text-align: center;">Download my resume below:</p>
+  <div style="text-align: center;">
+    <a class="resume-btn" href="assets/varsha_resume.pdf" target="_blank">Download Resume</a>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:varshamtandur1204@gmail.com">varshamtandur1204@gmail.com</a></p>
+      <p>Phone: +91 7760596452</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Varsha M Tandur. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
